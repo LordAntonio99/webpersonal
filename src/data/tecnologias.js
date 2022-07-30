@@ -38,7 +38,7 @@ export const tecnologias = [
     {
         id: 7,
         name: "Git",
-        logo: "http://assets.stickpng.com/images/5847f981cef1014c0b5e48be.png",
+        logo: "https://iconape.com/wp-content/png_logo_vector/git-icon.png",
         link: "https://git-scm.com/",
     },
     {

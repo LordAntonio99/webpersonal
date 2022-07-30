@@ -4,7 +4,7 @@ import { webs } from "../data/webs";
 export const Webs = () => {
   return (
     <div
-      className="w-full h-screen bg-black pt-12 scroll-m-48 md:scroll-m-12"
+      className="w-full pb-12 bg-black pt-12 scroll-m-48 md:scroll-m-12"
       id="webs"
     >
       <div className="flex flex-row items-center justify-center">

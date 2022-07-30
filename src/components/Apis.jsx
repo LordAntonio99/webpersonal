@@ -4,7 +4,7 @@ import { apis } from "../data/apis";
 export const Apis = () => {
   return (
     <div
-      className="w-full h-screen bg-black pt-12 scroll-m-48 md:scroll-m-12"
+      className="w-full bg-black pt-12 scroll-m-48 md:scroll-m-12"
       id="apis"
     >
       <div className="flex flex-row items-center justify-center">

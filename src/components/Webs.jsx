@@ -1,30 +1,34 @@
 import React from "react";
-import { apis } from "../data/apis";
+import { webs } from "../data/webs";
 
 export const Webs = () => {
   return (
     <div
       className="w-full h-screen bg-black pt-12 scroll-m-48 md:scroll-m-12"
-      id="apis"
+      id="webs"
     >
       <div className="flex flex-row items-center justify-center">
-        <h1 className="text-white text-5xl font-semibold">APIs</h1>
+        <h1 className="text-white text-5xl font-semibold">Webs</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {apis.map((api) => (
-          <div className="h-96 relative rounded-lg flex flex-col items-center justify-center px-8">
-            <img src={api.logo} alt="Logo del proyecto" className="w-24 h-24 object-contain" />
-            <h1 className="text-white text-2xl mt-4 mb-2">{api.name}</h1>
-            <p className="text-white">{api.description}</p>
+        {webs.map((web) => (
+          <div className="h-[500px] relative rounded-lg flex flex-col items-center justify-center px-8 overflow-hidden">
+            <img
+              src={web.image}
+              alt="Logo del proyecto"
+              className="h-56 w-full object-cover"
+            />
+            <h1 className="text-white text-2xl mt-4 mb-2">{web.name}</h1>
+            <p className="text-white">{web.description}</p>
             <div className="absolute bottom-0 flex flex-row space-x-4">
-              <a href={api.github} target="_blank" rel="noreferrer">
+              <a href={web.github} target="_blank" rel="noreferrer">
                 <button className="px-4 py-2 bg-black rounded-lg text-white border border-white hover:scale-110 hover:bg-white hover:text-black transition-all">
                   Github
                 </button>
               </a>
-              <a href={api.link} target="_blank" rel="noreferrer">
-                <button className="px-4 py-2 bg-black rounded-lg text-blue-500 border border-blue-500 hover:scale-110 hover:bg-blue-500 hover:text-white transition-all">
-                  RapidAPI
+              <a href={web.link} target="_blank" rel="noreferrer">
+                <button className="px-4 py-2 bg-black rounded-lg text-purple-500 border border-purple-500 hover:scale-110 hover:bg-purple-500 hover:text-white transition-all">
+                  Demo
                 </button>
               </a>
             </div>

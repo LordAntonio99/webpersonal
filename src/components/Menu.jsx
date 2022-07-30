@@ -28,10 +28,10 @@ export const Menu = () => {
             <AiOutlineApi className="mr-2" />
             <h1>APIs</h1>
           </a>
-          <div className="text-white/60 hover:text-white text-xl flex flex-row items-center justify-center hover:scale-110 cursor-pointer transition-all">
+          <a href="#webs" className="text-white/60 hover:text-white text-xl flex flex-row items-center justify-center hover:scale-110 cursor-pointer transition-all">
             <BiWorld className="mr-2" />
             <h1>Webs</h1>
-          </div>
+          </a>
         </div>
       </div>
     </div>
